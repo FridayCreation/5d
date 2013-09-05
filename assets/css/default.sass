@@ -1,0 +1,81 @@
+
+@import "bourbon/bourbon"
+
+body, html
+  font-size: 100%
+  padding: 0
+  margin: 0
+  height: 100%
+
+body
+  // font-family: 'Lato', Calibri, Arial, sans-serif
+  // background: url(../img/noise.gif)
+  font-weight: 200
+  font-size: 18px
+  background: #f6f6f6
+  color: #333
+  overflow: scroll
+  overflow-x: hidden
+
+
+img
+  margin-top: 20px
+  margin-bottom: 60px
+  width: 196px
+  height: 207px
+p
+  margin: 0
+.purple
+  color: #a334bb
+.intro
+  padding-top: 200px
+  margin-bottom: 60px
+
+.title
+  margin-top: 30px
+  font-size: 32px
+
+.detail
+  font-size: 24px
+  font-weight: 100
+  color: #666
+  margin-bottom: 15px
+   
+.info
+  i
+    margin-top: 2px
+  
+.email
+  display: block
+  padding: 10px
+  border: 1px solid #a334bb
+  background: white
+  color: #a334bb
+
+  &:hover
+    text-decoration: none
+    background: #a334bb
+    color: white
+
+
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)
+  .intro
+    padding-top: 100px
+
+
+/* Landscape phones and down */
+@media (max-width: 480px)
+  .intro
+    padding-top: 40px
+    text-align: center
+
+    a
+      text-align: left
+
+  img
+    width: 196px
+    height: 207px
+    margin: 0

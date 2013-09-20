@@ -1,56 +1,133 @@
-/* line 5, ../sass/screen.sass */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+/* line 6, ../sass/screen.sass */
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 10, ../sass/screen.sass */
 .container {
   margin: 0 auto;
   max-width: 960px;
   width: 960px;
 }
-/* line 10, ../sass/screen.sass */
+/* line 15, ../sass/screen.sass */
 .container > hr {
   margin: 60px 0;
 }
 
-/* line 13, ../sass/screen.sass */
-.jumbotron {
-  margin: 80px 0;
-  text-align: center;
-}
-/* line 16, ../sass/screen.sass */
-.jumbotron h1 {
-  font-size: 100px;
-  line-height: 1;
-}
-/* line 19, ../sass/screen.sass */
-.jumbotron .lead {
-  font-size: 24px;
-  line-height: 1.25;
-}
-/* line 22, ../sass/screen.sass */
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+/*
+ * ======================= overide bootstrap =======================
+ */
+/* line 23, ../sass/screen.sass */
+.btn {
+  -webkit-border-radius: 0 0;
+  -moz-border-radius: 0 / 0;
+  border-radius: 0 / 0;
 }
 
 /* line 26, ../sass/screen.sass */
-.marketing {
-  margin: 60px 0;
+.btn-purple {
+  border: 1px solid #4b1770;
+  color: white;
+  position: relative;
+  z-index: 2;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #8827cc), color-stop(100%, #a937e4));
+  background-image: -webkit-linear-gradient(bottom, #8827cc 0%, #a937e4 100%);
+  background-image: -moz-linear-gradient(bottom, #8827cc 0%, #a937e4 100%);
+  background-image: -o-linear-gradient(bottom, #8827cc 0%, #a937e4 100%);
+  background-image: linear-gradient(bottom, #8827cc 0%, #a937e4 100%);
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 0;
+  -webkit-border-radius: 0 0;
+  -moz-border-radius: 0 / 0;
+  border-radius: 0 / 0;
 }
-/* line 28, ../sass/screen.sass */
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-/* line 31, ../sass/screen.sass */
-header {
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg2MTNjMiIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2M4NjdmMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #8613c2), color-stop(100%, #c867f1));
-  background-image: -webkit-linear-gradient(bottom, #8613c2 0%, #c867f1 100%);
-  background-image: -moz-linear-gradient(bottom, #8613c2 0%, #c867f1 100%);
-  background-image: -o-linear-gradient(bottom, #8613c2 0%, #c867f1 100%);
-  background-image: linear-gradient(bottom, #8613c2 0%, #c867f1 100%);
-}
-
 /* line 36, ../sass/screen.sass */
+.btn-purple:hover {
+  background-color: #8827cc;
+  color: #f2f2f2;
+}
+/* line 41, ../sass/screen.sass */
+.btn-purple:active:before {
+  height: 0px;
+}
+/* line 45, ../sass/screen.sass */
+.btn-purple:before {
+  content: " ";
+  position: absolute;
+  background-color: rgba(39, 39, 39, 0.22);
+  height: 4px;
+  margin-top: 31px;
+  margin-left: -25px;
+  width: 163px;
+}
+
+/* line 57, ../sass/screen.sass */
+.page-header h3 {
+  font-weight: 400;
+}
+/* line 59, ../sass/screen.sass */
+.page-header span {
+  font-weight: 300;
+  color: #888888;
+  font-size: 18px;
+}
+
+/*
+ * ======================= header =======================
+ */
+/* line 69, ../sass/screen.sass */
+header {
+  color: white;
+  overflow: hidden;
+  position: relative;
+  background: url("../img/header-bg.png");
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 0;
+}
+/* line 76, ../sass/screen.sass */
+header:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 14px;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.15)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+}
+/* line 84, ../sass/screen.sass */
+header .bg {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, color-stop(0%, rgba(255, 255, 155, 0.25)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-radial-gradient(center bottom, 500px 450px, rgba(255, 255, 155, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-radial-gradient(center bottom, 500px 450px, rgba(255, 255, 155, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-radial-gradient(center bottom, 500px 450px, rgba(255, 255, 155, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: radial-gradient(center bottom, 500px 450px, rgba(255, 255, 155, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+}
+/* line 91, ../sass/screen.sass */
+header .bg:before {
+  content: " ";
+  background: url("../img/wind.png") center no-repeat;
+  background-size: 90% auto;
+  margin-top: 150px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/*
+ * ======================= nav bar =======================
+ */
+/* line 106, ../sass/screen.sass */
 .navbar .navbar-inner {
+  padding-top: 50px;
   background: none;
   border: 0;
   -webkit-border-radius: 0px 0px;
@@ -59,4 +136,153 @@ header {
   -webkit-box-shadow: white 0 0 0;
   -moz-box-shadow: white 0 0 0;
   box-shadow: white 0 0 0;
+}
+/* line 113, ../sass/screen.sass */
+.navbar .navbar-inner .container > a, .navbar .navbar-inner .nav > li > a {
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 0;
+}
+/* line 116, ../sass/screen.sass */
+.navbar .navbar-inner .brand {
+  font-weight: bold;
+}
+
+/*
+ * ======================= jumbotron =======================
+ */
+/* line 123, ../sass/screen.sass */
+.jumbotron {
+  margin: 80px 0;
+  text-align: center;
+}
+/* line 126, ../sass/screen.sass */
+.jumbotron h2 {
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 132, ../sass/screen.sass */
+.jumbotron .lead {
+  font-size: 21px;
+  line-height: 2;
+  color: #de9ffc;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
+}
+/* line 138, ../sass/screen.sass */
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+  padding-top: 10px;
+}
+
+/*
+ * ======================= services =======================
+ */
+/* line 148, ../sass/screen.sass */
+.services .purple {
+  color: #9622d0;
+}
+/* line 151, ../sass/screen.sass */
+.services h4 {
+  margin: 0 0 3px 0;
+  color: #444444;
+  font-size: 16px;
+}
+/* line 155, ../sass/screen.sass */
+.services p {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 300;
+}
+/* line 160, ../sass/screen.sass */
+.services .icon-stack {
+  width: 100%;
+}
+/* line 163, ../sass/screen.sass */
+.services .icon-stack-base {
+  font-size: 3.4em;
+  margin-top: 6px;
+}
+/* line 167, ../sass/screen.sass */
+.services .icon-large {
+  margin-top: 9px;
+}
+/* line 170, ../sass/screen.sass */
+.services .icon-tablet {
+  font-size: 130%;
+  margin-top: 10px;
+}
+/* line 174, ../sass/screen.sass */
+.services .icon-search {
+  font-size: 110%;
+  margin-top: 7px;
+}
+/* line 178, ../sass/screen.sass */
+.services .icon-shopping-cart {
+  font-size: 120%;
+}
+/* line 181, ../sass/screen.sass */
+.services .icon-envelope {
+  font-size: 105%;
+}
+/* line 184, ../sass/screen.sass */
+.services .icon-print {
+  font-size: 120%;
+  margin-left: 1px;
+}
+/* line 188, ../sass/screen.sass */
+.services .icon-facebook {
+  font-size: 120%;
+}
+/* line 191, ../sass/screen.sass */
+.services .item {
+  margin-bottom: 15px;
+}
+/* line 194, ../sass/screen.sass */
+.services .item:hover {
+  cursor: pointer;
+}
+/* line 196, ../sass/screen.sass */
+.services .item:hover .purple {
+  color: #666666;
+}
+
+/*
+ * ======================= services =======================
+ */
+/* line 202, ../sass/screen.sass */
+.featurette {
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 80px;
+}
+/* line 206, ../sass/screen.sass */
+.featurette h2 {
+  margin-top: 90px;
+  font-weight: normal;
+}
+/* line 209, ../sass/screen.sass */
+.featurette p {
+  color: #777777;
+  font-size: 23px;
+  font-weight: 300;
+}
+
+/* line 215, ../sass/screen.sass */
+.msg-bar {
+  margin-top: 40px;
+  background-color: #ebebeb;
+  margin-bottom: 50px;
+  padding: 20px 0;
+}
+/* line 221, ../sass/screen.sass */
+.msg-bar p {
+  color: #999999;
+  font-size: 24px;
+  margin: 0;
+  line-height: 44px;
+}
+/* line 227, ../sass/screen.sass */
+.msg-bar p strong {
+  color: black;
 }

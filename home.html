@@ -6,20 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/normalize.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="assets/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     
     <!--[if IE]>
-        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
-
     <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
-
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
@@ -27,83 +24,265 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
   </head>
-
   <body>
     <div clas="wrapper">
       <header>
-        <div class="navbar">
-          <div class="navbar-inner">
+        <div class="bg">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="container">
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </a>
+                
+                <!-- Be sure to leave the brand out there if you want it shown -->
+                <a class="brand" href="#">Friday Creation</a>
+                <div class="nav-collapse collapse">
+                  <ul class="nav pull-right">
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Method</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </div><!-- /.navbar -->
             <div class="container">
-              <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </a>
-         
-              <!-- Be sure to leave the brand out there if you want it shown -->
-              <a class="brand" href="#">Friday Creation</a>
-
-              <div class="nav-collapse collapse">
-                <ul class="nav pull-right">
-                  <li class="active"><a href="#">Work</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Method</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Blog</a></li>
-                </ul>
+              <!-- Jumbotron -->
+              <div class="jumbotron">
+                <h2>WE ARE A CREATIVE AND DIGITAL<br/>STUDIO BASED IN MACAO</h2>
+                <p class="lead">Delivery the best product to our client</p>
+                <br/>
+                <a class="btn btn-large btn-purple" href="#">Get a Quote</a>
               </div>
             </div>
           </div>
-        </div><!-- /.navbar -->
-        <div class="container">
-          <!-- Jumbotron -->
-          <div class="jumbotron">
-            <h1>Marketing stuff!</h1>
-            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <a class="btn btn-large btn-success" href="#">Get started today</a>
+        </header>
+        
+        <!-- services -->
+        <div class="container services">
+          <div class="page-header">
+            <h3>SERVICES <span>that we provide</span></h3>
+          </div>
+          <!-- Example row of columns -->
+          <div class="row-fluid">
+            <div class="span4 item">
+              <div class="row-fluid">
+                <div class="span2">
+                  <span class="icon-stack pull-left clear-fix">
+                  <i class="icon-circle icon-stack-base purple"></i>
+                  <i class="icon-magic icon-light icon-large"></i>
+                  </span>
+                </div>
+                <div class="span10">
+                  <h4 class="block">Branding</h4>
+                  <p>Branding is not just a Logo Design, It’s much much more</p>
+                </div>
+              </div>
+            </div>
+            <div class="span4 item">
+              <div class="row-fluid">
+                <div class="span2">
+                  <span class="icon-stack pull-left clear-fix">
+                  <i class="icon-circle icon-stack-base purple"></i>
+                  <i class="icon-tablet icon-light icon-large"></i>
+                  </span>
+                </div>
+                <div class="span10">
+                  <h4 class="block">Mobile</h4>
+                  <p>Design and build a mobile app for Android, iPhone or Windows Phone</p>
+                </div>
+              </div>
+            </div>
+            <div class="span4 item">
+              <div class="row-fluid">
+                <div class="span2">
+                  <span class="icon-stack pull-left clear-fix">
+                  <i class="icon-circle icon-stack-base purple"></i>
+                  <i class="icon-envelope icon-light icon-large"></i>
+                  </span>
+                </div>
+                <div class="span10">
+                  <h4 class="block">Email Marketing</h4>
+                  <p>Newsletters can be integrated into our CMS to target a specific audience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span4 item">
+              <div class="row-fluid">
+                <div class="span2">
+                  <span class="icon-stack pull-left clear-fix">
+                  <i class="icon-circle icon-stack-base purple"></i>
+                  <i class="icon-desktop icon-light icon-large"></i>
+                  </span>
+                </div>
+                <div class="span10">
+                  <h4 class="block">Website Design</h4>
+                  <p>Clean, professional bespoke website producted for clients all over the world</p>
+                </div>
+              </div>
+            </div>
+            <div class="span4 item">
+              <div class="row-fluid">
+                <div class="span2">
+                  <span class="icon-stack pull-left clear-fix">
+                  <i class="icon-circle icon-stack-base purple"></i>
+                  <i class="icon-list-alt icon-light icon-large"></i>
+                  </span>
+                </div>
+                <div class="span10">
+                  <h4 class="block">Content Management System</h4>
+                  <p>Have the ability to update your website withour needing to contact us</p>
+                </div>
+              </div>
+            </div>
+            <div class="span4 item">
+              <div class="row-fluid">
+                <div class="span2">
+                  <span class="icon-stack pull-left clear-fix">
+                  <i class="icon-circle icon-stack-base purple"></i>
+                  <i class="icon-search icon-light icon-large"></i>
+                  </span>
+                </div>
+                <div class="span10">
+                  <h4 class="block">Search Engine Optimisation</h4>
+                  <p>Increase you visibility within search engines such as Google</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-fluid ">
+            <div class="span4 item">
+              <div class="row-fluid">
+                <div class="span2">
+                  <span class="icon-stack pull-left clear-fix">
+                  <i class="icon-circle icon-stack-base purple"></i>
+                  <i class="icon-print icon-light icon-large"></i>
+                  </span>
+                </div>
+                <div class="span10">
+                  <h4 class="block">Print</h4>
+                  <p>Business Cards, Stationery, Brochures, you name it - we can do it</p>
+                </div>
+              </div>
+            </div>
+            <div class="span4 item">
+              <div class="row-fluid">
+                <div class="span2">
+                  <span class="icon-stack pull-left clear-fix">
+                  <i class="icon-circle icon-stack-base purple"></i>
+                  <i class="icon-shopping-cart icon-light icon-large"></i>
+                  </span>
+                </div>
+                <div class="span10">
+                  <h4 class="block">eCommerce</h4>
+                  <p>Have the ability to sell online to your customers</p>
+                </div>
+              </div>
+            </div>
+            <div class="span4 item">
+              <div class="row-fluid">
+                <div class="span2">
+                  <span class="icon-stack pull-left clear-fix">
+                  <i class="icon-circle icon-stack-base purple"></i>
+                  <i class="icon-facebook icon-light icon-large"></i>
+                  </span>
+                </div>
+                <div class="span10">
+                  <h4 class="block">Social Marketing</h4>
+                  <p>We can update your Twitter / Facebook a regular basis</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </header>
+
+      <!-- msg bar -->
+      <div class="msg-bar">
+        <div class="container">
+          <button class="btn btn-large pull-right"><i class="icon-envelope"></i> CONTACT US</button>
+          <p>WE LOVE TO HEAR SOMETHING FROM YOU. <strong>DROP US AN EMAIL</strong></p>
+        </div>
+      </div>
       
+      <!-- services -->
+      <div class="container works">
+        <div class="page-header">
+          <h3>RECENT WORKS <span>that we have completed</span></h3>
+        </div>
+
+        <ul class="thumbnails">
+          <li class="span3">
+            <a href="#" class="thumbnail">
+              <img data-src="holder.js/100%x200" alt="">
+            </a>
+          </li>
+          <li class="span3">
+            <a href="#" class="thumbnail">
+              <img data-src="holder.js/100%x200" alt="">
+            </a>
+          </li>
+          <li class="span3">
+            <a href="#" class="thumbnail">
+              <img data-src="holder.js/100%x200" alt="">
+            </a>
+          </li>
+          <li class="span3">
+            <a href="#" class="thumbnail">
+              <img data-src="holder.js/100%x200" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- msg bar -->
+      <div class="msg-bar">
+        <div class="container">
+          <p>YOU NAME IT, WE MAKE IT</p>
+        </div>
+      </div>
 
       <div class="container">
-
-        <hr>
-
-        <!-- Example row of columns -->
-        <div class="row-fluid">
-          <div class="span4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
-          </div>
-          <div class="span4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
-         </div>
-          <div class="span4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
-          </div>
+        <div class="featurette clearfix">
+          <img class="featurette-image pull-right" src="assets/img/designing.png">
+          <h2 class="featurette-heading">DESIGN FROM SCRATCH</h2>
+          <p class="lead">We design a web site depends on your requirement. After review, it will hands to our developers to build it up.</p>
         </div>
 
-        <hr>
 
-        <div class="footer">
-          <p>&copy; Company 2013</p>
+        <div class="featurette clearfix">
+          <img class="featurette-image pull-left" src="assets/img/coding.png">
+          <h2 class="featurette-heading">DEVELOP IN TIME</h2>
+          <p class="lead">Our developers are experienced so you don’t need to worry about it. We will delivery it in time.</p>
         </div>
+
+
+        <div class="featurette clearfix">
+          <img class="featurette-image pull-right" src="assets/img/designing.png">
+          <h2 class="featurette-heading">PROMISED RESULT</h2>
+          <p class="lead">The web site or application will looks exactly the same with the design that you confirm. Let it rolls!</p>
+        </div>
+
 
       </div>
-    </div> 
 
-
-    <!-- ================================================== -->
-    <script src="assets/js/jquery-2.0.3.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-  </body>
-</html>
+      <div class="footer">
+        <div class="container">
+          <p>&copy; Company 2013</p>
+        </div>
+        
+      </div>
+      <!-- ================================================== -->
+      <script src="assets/js/jquery-2.0.3.min.js"></script>
+      <script src="assets/js/holder.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+    </body>
+  </html>

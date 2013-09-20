@@ -1,5 +1,10 @@
 
 @import compass/css3
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700)
+
+
+body
+	font-family: 'Lato', "Helvetica Neue",Helvetica, Arial, sans-serif
 
 
 .container
@@ -10,32 +15,214 @@
 	> hr
 		margin: 60px 0
 
+
+/**
+ * ======================= overide bootstrap =======================
+ */
+
+.btn
+	+border-radius(0,0)
+
+.btn-purple
+	border: 1px solid #4b1770 // stroke
+	color: white
+	position: relative
+	z-index: 2
+
+	+box-shadow(inset 0 1px 0 rgba(255,255,255,.4)) // inner shadow
+	+background-image(linear-gradient(bottom, #8827cc 0%, #a937e4 100%)) // gradient overlay
+	+text-shadow(rgba(black, 0.6) 0px 1px 0)
+	+border-radius(0,0)
+	&:hover
+		background-color: #8827cc
+		color: darken(#fff, 5%)
+
+	&:active
+		&:before
+			height: 0px
+			
+
+	&:before
+		content: " "
+		position: absolute
+		background-color: rgba(39,39,39,.22) // color overlay
+		height: 4px
+		margin-top: 31px
+		margin-left: -25px
+		width: 163px
+
+
+
+.page-header
+	h3
+		font-weight: 400
+	span
+		font-weight: 300
+		color: #888
+		font-size: 18px
+
+
+
+/**
+ * ======================= header =======================
+ */
+header
+	color: white
+	overflow: hidden
+	position: relative
+	background: url("../img/header-bg.png")
+	+text-shadow(rgba(black, 0.6) 0px 1px 0)
+
+	&:after
+		content: " "
+		position: absolute
+		width: 100%
+		height: 14px
+		bottom: 0
+		+background-image(linear-gradient(bottom, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 100%)) // layer fill content
+
+	.bg
+		position: relative
+		overflow: hidden
+		width: 100%
+		height: 100%
+		+background-image(radial-gradient(center bottom, 500px 450px, rgba(255,255,155,.25) 0%, rgba(255,255,255,0) 100%))
+
+		&:before
+			content: " "
+			background: url("../img/wind.png") center no-repeat
+			background-size: 90% auto
+			margin-top: 150px
+			width: 100%
+			height: 100%
+			position: absolute
+
+
+
+/**
+ * ======================= nav bar =======================
+ */
+.navbar
+	.navbar-inner
+		padding-top: 50px
+		background: none
+		border: 0 
+		+border-radius(0px, 0px)
+		+box-shadow(#fff 0 0 0)
+
+		.container > a, .nav > li > a
+			color: white
+			+text-shadow(rgba(black, 0.6) 0px 1px 0)
+		.brand
+			font-weight: bold
+
+
+/**
+ * ======================= jumbotron =======================
+ */
 .jumbotron
 	margin: 80px 0
 	text-align: center
-	h1
-		font-size: 100px
-		line-height: 1
+	h2
+		font-size: 38px
+		line-height: 1.2
+		font-weight: bold
+		+text-shadow(0 2px 0 rgba(0,0,0,.5)) 
+
 	.lead
-		font-size: 24px
-		line-height: 1.25
+		font-size: 21px
+		line-height: 2
+		color: #de9ffc // text color
+		@include text-shadow(0 1px 0 rgba(0,0,0,.7)) // drop shadow
+
 	.btn
 		font-size: 21px
 		padding: 14px 24px
+		padding-top: 10px
 
-.marketing
-	margin: 60px 0
-	p + h4
-		margin-top: 28px
 
-header
-	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg2MTNjMiIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2M4NjdmMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+) /* gradient overlay */
-	@include background-image(linear-gradient(bottom, #8613c2 0%, #c867f1 100%))
+/**
+ * ======================= services =======================
+ */
+.services
+	.purple
+		color: #9622d0
 
-.navbar
-	.navbar-inner
-		background: none
-		border: 0 
-		@include border-radius(0px, 0px)
-		@include box-shadow(#fff 0 0 0)
+	h4
+		margin: 0 0 3px 0
+		color: #444
+		font-size: 16px
+	p
+		color: #666
+		font-size: 14px
+		font-weight: 300
 
+	.icon-stack
+		width: 100%
+
+	.icon-stack-base 
+		font-size: 3.4em
+		margin-top: 6px
+
+	.icon-large
+		margin-top: 9px
+
+	.icon-tablet
+		font-size: 130%
+		margin-top: 10px
+
+	.icon-search
+		font-size: 110%
+		margin-top: 7px
+
+	.icon-shopping-cart
+		font-size: 120%
+
+	.icon-envelope
+		font-size: 105%
+
+	.icon-print
+		font-size: 120%
+		margin-left: 1px
+
+	.icon-facebook
+		font-size: 120%
+
+	.item
+		margin-bottom: 15px
+
+		&:hover
+			cursor: pointer
+			.purple
+				color: #666
+
+/**
+ * ======================= services =======================
+ */
+.featurette
+	border-bottom: 1px solid #efefef
+	margin-bottom: 80px
+
+	h2
+		margin-top: 90px
+		font-weight: normal
+	p
+		color: #777
+		font-size: 23px
+		font-weight: 300
+
+
+.msg-bar
+	margin-top: 40px
+	background-color: #ebebeb 
+	margin-bottom: 50px
+	padding: 20px 0
+
+	p
+		color: #999 // text color
+		font-size: 24px
+		margin: 0
+		line-height: 44px
+
+		strong
+			color: #000

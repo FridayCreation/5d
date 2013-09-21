@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Template &middot; Bootstrap</title>
+    <title>Friday Creation Studio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Friday Creation Web Site">
+    <meta name="author" content="Friday Creation">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/normalize.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -17,11 +17,6 @@
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
   </head>
   <body>
@@ -42,12 +37,10 @@
                 <a class="brand" href="#">Friday Creation</a>
                 <div class="nav-collapse collapse">
                   <ul class="nav pull-right">
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Method</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#method">Method</a></li>
+                    <li><a href="#contact">Contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -56,17 +49,17 @@
             <div class="container">
               <!-- Jumbotron -->
               <div class="jumbotron">
-                <h2>WE ARE A CREATIVE AND DIGITAL<br/>STUDIO BASED IN MACAO</h2>
-                <p class="lead">Delivery the best product to our client</p>
+                <h2>A CREATIVE AND <span class="dynamo" data-lines="EFFICIENT,EFFECTIVE">INNOVATION</span><br/>STUDIO BASED IN MACAO</h2>
+                <p class="lead">Deliver the best product to our client</p>
                 <br/>
-                <a class="btn btn-large btn-purple" href="#">Get a Quote</a>
+                <a class="btn btn-large btn-purple" href="#">Quote Now</a>
               </div>
             </div>
           </div>
         </header>
         
         <!-- services -->
-        <div class="container services">
+        <div id="services" class="container services">
           <div class="page-header">
             <h3>SERVICES <span>that we provide</span></h3>
           </div>
@@ -204,85 +197,112 @@
             </div>
           </div>
         </div>
-
-      <!-- msg bar -->
-      <div class="msg-bar">
-        <div class="container">
-          <button class="btn btn-large pull-right"><i class="icon-envelope"></i> CONTACT US</button>
-          <p>WE LOVE TO HEAR SOMETHING FROM YOU. <strong>DROP US AN EMAIL</strong></p>
-        </div>
-      </div>
-      
-      <!-- services -->
-      <div class="container works">
-        <div class="page-header">
-          <h3>RECENT WORKS <span>that we have completed</span></h3>
-        </div>
-
-        <ul class="thumbnails">
-          <li class="span3">
-            <a href="#" class="thumbnail">
-              <img data-src="holder.js/100%x200" alt="">
-            </a>
-          </li>
-          <li class="span3">
-            <a href="#" class="thumbnail">
-              <img data-src="holder.js/100%x200" alt="">
-            </a>
-          </li>
-          <li class="span3">
-            <a href="#" class="thumbnail">
-              <img data-src="holder.js/100%x200" alt="">
-            </a>
-          </li>
-          <li class="span3">
-            <a href="#" class="thumbnail">
-              <img data-src="holder.js/100%x200" alt="">
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- msg bar -->
-      <div class="msg-bar">
-        <div class="container">
-          <p>YOU NAME IT, WE MAKE IT</p>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="featurette clearfix">
-          <img class="featurette-image pull-right" src="assets/img/designing.png">
-          <h2 class="featurette-heading">DESIGN FROM SCRATCH</h2>
-          <p class="lead">We design a web site depends on your requirement. After review, it will hands to our developers to build it up.</p>
-        </div>
-
-
-        <div class="featurette clearfix">
-          <img class="featurette-image pull-left" src="assets/img/coding.png">
-          <h2 class="featurette-heading">DEVELOP IN TIME</h2>
-          <p class="lead">Our developers are experienced so you don’t need to worry about it. We will delivery it in time.</p>
-        </div>
-
-
-        <div class="featurette clearfix">
-          <img class="featurette-image pull-right" src="assets/img/designing.png">
-          <h2 class="featurette-heading">PROMISED RESULT</h2>
-          <p class="lead">The web site or application will looks exactly the same with the design that you confirm. Let it rolls!</p>
-        </div>
-
-
-      </div>
-
-      <div class="footer">
-        <div class="container">
-          <p>&copy; Company 2013</p>
+        <!-- msg bar -->
+        <div class="msg-bar">
+          <div class="container">
+            <button class="btn btn-large pull-right"><i class="icon-envelope"></i> CONTACT US</button>
+            <p>WE LOVE TO HEAR SOMETHING FROM YOU. <strong>DROP US AN EMAIL</strong></p>
+          </div>
         </div>
         
-      </div>
-      <!-- ================================================== -->
-      <script src="assets/js/jquery-2.0.3.min.js"></script>
-      <script src="assets/js/holder.js"></script>
-      <script src="assets/js/bootstrap.min.js"></script>
-    </body>
-  </html>
+        <!-- services -->
+        <div id="works" class="container works">
+          <div class="page-header">
+            <h3>RECENT WORKS <span>that we have completed</span></h3>
+          </div>
+          <ul class="thumbnails">
+            <li class="span3">
+              <a href="#" class="thumbnail">
+              <img src="assets/img/ref1.png" alt="">
+              <div class="description">
+                <h3>STALLKET</h3>
+                <p>A shopping website</p>
+              </div>
+              </a>
+            </li>
+            <li class="span3">
+              <a href="#" class="thumbnail">
+              <img src="assets/img/ref2.png" alt="">
+              <div class="description">
+                <h3>COOKQUERY</h3>
+                <p>A website for cooking</p>
+              </div>
+              </a>
+            </li>
+            <li class="span3">
+              <a href="#" class="thumbnail">
+              <img src="assets/img/ref3.png"alt="">
+              <div class="description">
+                <h3>INSIGHT</h3>
+                <p>A mobile app website</p>
+              </div>
+              </a>
+            </li>
+            <li class="span3">
+              <a href="#" class="thumbnail">
+              <img src="assets/img/ref4.png"  alt="">
+              <div class="description">
+                <h3>IMX</h3>
+                <p>An image web app</p>
+              </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- msg bar -->
+        <div class="msg-bar">
+          <div class="container">
+            <p>YOU NAME IT, WE MAKE IT</p>
+          </div>
+        </div>
+
+        <!-- method -->
+        <div id="method" class="container">
+          <div class="featurette clearfix">
+            <img class="featurette-image pull-right" src="assets/img/designing.png">
+            <h2 class="featurette-heading">DESIGN FROM SCRATCH</h2>
+            <p class="lead">We design a web site depends on your requirement. After review, it will hands to our developers to build it up.</p>
+          </div>
+          <div class="featurette clearfix">
+            <img class="featurette-image pull-left" src="assets/img/coding.png">
+            <h2 class="featurette-heading">DEVELOP IN TIME</h2>
+            <p class="lead">Our developers are experienced so you don’t need to worry about it. We will delivery it in time.</p>
+          </div>
+          <div class="featurette clearfix">
+            <img class="featurette-image pull-right" src="assets/img/designing.png">
+            <h2 class="featurette-heading">PROMISED RESULT</h2>
+            <p class="lead">The web site or application will looks exactly the same with the design that you confirm. Let it rolls!</p>
+          </div>
+        </div>
+
+        <!-- contact -->
+        <div id="contact" class="address-bar text-center clearfix">
+          <div class="container">
+            <a >CONTACT US</a>
+            <p class="address">EDIFICIO ADVANCE PLAZA SITO NA.<br/>AVENDIA DO Dr. MACAO</p>
+            <p class="phone">+(853) 66959109</p>
+            <p class="email">ku4ncheang@gmail.com</p>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer text-center">
+          <div class="container">
+            <p>&copy; Friday Creation Ltd. 2013</p>
+          </div>
+          
+        </div>
+        <!-- ================================================== -->
+        <script src="assets/js/jquery-2.0.3.min.js"></script>
+        <script src="assets/js/holder.js"></script>
+        <script src="assets/js/retina.js"></script>
+        <script src="assets/js/dynamo.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+          $(function() {
+            $('.dynamo').dynamo();
+          });
+        </script>
+      </body>
+    </html>

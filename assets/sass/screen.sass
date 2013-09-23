@@ -15,7 +15,6 @@ body
 	> hr
 		margin: 60px 0
 
-
 /**
  * ======================= overide bootstrap =======================
  */
@@ -104,7 +103,7 @@ header
 	color: white
 	overflow: hidden
 	position: relative
-	background: url("../img/header-bg.png")
+	background: url("../img/header-bg.jpg")
 	margin-bottom: 40px
 	+text-shadow(rgba(black, 0.6) 0px 1px 0)
 
@@ -271,7 +270,7 @@ header
 .address-bar
 	+text-shadow(rgba(black, 0.6) 0px 1px 0)
 	padding: 60px 0
-	background: url("../img/address-bar-bg.png")
+	background: url("../img/address-bar-bg.jpg")
 	a
 		border: 6px solid white
 		padding: 16px 32px
@@ -297,3 +296,14 @@ header
 		font-weight: bold
 	.phone,.email
 		font-size: 27px
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+	.address-bar
+		background: url("../img/address-bar-bg@2x.jpg") repeat top left
+		background-size: 101px 101px
+
+	header
+		background: url("../img/header-bg@2x.jpg") repeat top left
+		background-size: 503px 545px
+

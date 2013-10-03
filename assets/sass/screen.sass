@@ -42,8 +42,8 @@ body
 		background-color: rgba(39,39,39,.22) // color overlay
 		height: 4px
 		margin-top: 31px
-		margin-left: -52px
-		width: 212px
+		margin-left: -50px
+		width: 213px
 
 
 .page-header
@@ -255,7 +255,7 @@ header
 
 	p
 		color: #999 // text color
-		font-size: 24px
+		font-size: 22px
 		margin: 0
 		line-height: 44px
 
@@ -294,6 +294,50 @@ header
 		font-weight: bold
 	.phone,.email
 		font-size: 27px
+
+.modal
+	width: 720px
+	margin-left: -360px
+
+	.pp-form
+		width: 380px
+
+	.pp-type
+		margin-left: 20px
+		width: 269px
+		padding: 0 0px 0 20px
+		border-left: 1px solid #efefef
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+
+		li.active
+			background: #9b59b6
+		li
+			cursor: pointer
+			font-size: 90%
+			font-weight: bold
+			color: #8e44ad
+			padding: 12px 8px
+			background: #f6f6f6
+			margin-bottom: 6px
+			+border-radius(4px, 4px)
+
+			i
+				color: #ddd
+				font-size: 120%
+				line-height: 20px
+				float: right
+
+
+			&:hover
+				background: #9b59b6
+				color: white
+
+				i
+					color: white
+
 
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
@@ -551,3 +595,6 @@ header
 		&:last-child
 			border-bottom: none
 			margin-bottom: 0
+
+
+

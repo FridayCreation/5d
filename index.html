@@ -303,37 +303,42 @@
             <h3 id="myModalLabel">Project Planner</h3>
           </div>
           <div class="modal-body">
+            <div class="alert alert-block alert-error" data-bind="attr: { hidden: errors().length > 0 ? false : true}"">
+              <!-- <button type="button" class="close" data-dismiss="alert">&times;</button> -->
+              <h4 class="alert-heading">Oops! Something went wrong!</h4>
+              <div data-bind="foreach: errors">
+                <p data-bind="text: $data"></li>
+              </div>
+            </div>
             <div class="pull-left pp-form">
+              <h4>About you</h4>
               <fieldset>
                 <label>Your Name</label>
-                <input class="input-block-level" type="text" placeholder="peter">
+                <input class="input-block-level" type="text" placeholder="peter" data-bind="value: name">
                 <label>Company Name</label>
-                <input class="input-block-level" type="text" placeholder="company ltd.">
+                <input class="input-block-level" type="text" placeholder="company ltd." data-bind="value: company">
                 <label>Email Address</label>
-                <input class="input-block-level" type="text" placeholder="abc@example.com">
+                <input class="input-block-level" type="text" placeholder="abc@example.com" data-bind="value: email">
                 <label>Phone Number</label>
-                <input class="input-block-level" type="text" placeholder="+(853)66123123">
+                <input class="input-block-level" type="text" placeholder="+(853)66123123" data-bind="value: phone">
                 <label>Message (optional)</label>
-                <textarea class="input-block-level"></textarea>
+                <textarea class="input-block-level" data-bind="value: message"></textarea>
               </fieldset>
             </div>
             <div class="pull-left pp-type">
-              <ul>
-                <li>Website Design & Development<i class="icon-remove"></i></li>
-                <li>eCommerce<i class="icon-remove"></i></li>
-                <li>Responsive Website<i class="icon-remove"></i></li>
-                <li>Content Management System<i class="icon-remove"></i></li>
-                <li>Print<i class="icon-remove"></i></li>
-                <li>Mobile App<i class="icon-remove"></i></li>
-                <li>Branding<i class="icon-remove"></i></li>
-                <li>Searching Engine Optimisation<i class="icon-remove"></i></li>
+              <h4>Select a project type</h4>
+              <ul data-bind="foreach: categories">
+                <li id="category" data-bind="click: $parent.onSelected.bind($data, $element, $index())">
+                  <span data-bind="text: $data"></span>
+                  <i class="icon-remove"></i>
+                </li>
               </ul>
             </div>
 
           </div>
           <div class="modal-footer">
             <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-            <button class="btn btn-primary">Save changes</button>
+            <button class="btn btn-primary" data-bind="click: onSubmited">submit</button>
           </div>
         </div>
 

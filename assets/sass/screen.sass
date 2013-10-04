@@ -1,6 +1,6 @@
 
 @import compass/css3
-@import url(http://fonts.googleapis.com/css?family=Lato:400)
+// @import url(http://fonts.googleapis.com/css?family=Lato:400)
 
 
 body
@@ -297,7 +297,11 @@ header
 
 .modal
 	width: 720px
+
 	margin-left: -360px
+
+	.modal-body
+		max-height: 500px
 
 	.pp-form
 		width: 380px
@@ -314,15 +318,24 @@ header
 
 		li.active
 			background: #9b59b6
+			span
+				color: white
+
+			i
+				color: white
 		li
+			+transition-property(all)
+			+transition-duration(.2s)
 			cursor: pointer
-			font-size: 90%
-			font-weight: bold
-			color: #8e44ad
 			padding: 12px 8px
 			background: #f6f6f6
 			margin-bottom: 6px
 			+border-radius(4px, 4px)
+
+
+			span
+				font-size: 90%
+				font-weight: bold
 
 			i
 				color: #ddd
@@ -333,10 +346,13 @@ header
 
 			&:hover
 				background: #9b59b6
-				color: white
+				span
+					color: white
 
 				i
 					color: white
+
+
 
 
 

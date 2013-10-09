@@ -48,7 +48,11 @@ var ProjectPlannerModel = function(Categories){
 			if (key == "categories") 
 				return undefined;
 			return value;
-    	});
+  	});
+      
+    $.post("http://s.fridaycreation.com/projectplan", result, function(returnedData) {
+        console.log( returnedDate );
+    })
 	}
 }
 

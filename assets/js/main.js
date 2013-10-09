@@ -49,10 +49,12 @@ var ProjectPlannerModel = function(Categories){
 				return undefined;
 			return value;
   	});
-      
-    $.post("http://s.fridaycreation.com/projectplan", result, function(returnedData) {
-        console.log( returnedDate );
-    })
+    
+    var data = JSON.parse(result);
+    $.post("http://s.fridaycreation.com/projectplan", data, function(returnedData) {
+      $('#myModal').modal('hide')
+      alert('Request success!! We\'ll contact you soon');
+    });
 	}
 }
 
